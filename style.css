@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* ALL STYLE */
+/* ALL STYLE */
+/* ALL STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Belanosima', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.animated-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-hover {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.title-hover:hover {
+    color: #1abdaf;
+}
+
+/* END ALL STYLE */
+/* END ALL STYLE */
+/* END ALL STYLE */
+
+/* TOGGLE THEME */
+/* TOGGLE THEME */
+/* TOGGLE THEME */
+
+.body-dark {
+    background: #2b2a33;
+    color: white;
+    transition: 500ms ease-in-out;
+}
+
+.theme-active-none {
+    opacity: 30%;
+    transition: 500ms ease-in-out;
+}
+
+.body-light {
+    background: white;
+    color: #2b2a33;
+    transition: 500ms ease-in-out;
+}
+
+.img-toggle {
+    justify-self: flex-end;
+    align-self: center;
+    grid-row: a / c;
+    width: 20px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#toggleThemeLight {
+    justify-self: flex-start;
+}
+
+.container-toggle-theme {
+    width: 100px;
+    border-radius: 50px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: [] 1fr [] 1fr [];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 14px;
+    outline: 1px solid #268a81;
+    margin-left: 180px;
+    box-shadow: 0 0 15px #268a81;
+}
+
+.container-toggle-theme:hover {
+    cursor: pointer;
+}
+
+/* END TOGGLE THEME */
+/* END TOGGLE THEME */
+/* END TOGGLE THEME */
+
+/* RETURN TO TOP */
+/* RETURN TO TOP */
+/* RETURN TO TOP */
+
+.container-return-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.container-return-to-top-hidden {
+    display: none;
+}
+
+.container-return-to-top > a > img {
+    width: 15px;
+    margin: 0 30px 30px 0;  
+    transform: rotate(180deg);  
+    border: 2px solid #268a81;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+/* END RETURN TO TOP */
+/* END RETURN TO TOP */
+/* END RETURN TO TOP */
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 15px black;
+}
+  
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid #ffffff00;
+}
+
+h1:hover {
+    border-bottom: 1px solid #268a81;
+}
+  
+.container {
+    margin: 0;
+    padding: 15px;
+}
+  
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgb(58, 58, 58) 17.8%,
+        rgb(25, 192, 178) 100.2%
+    );
+    padding: 20px;
+}
+  
+.burgerLogo {
+    width: 20px;
+}
+  
+.logo {
+    width: 20px;
+}
+ 
+.LiNavTop {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: underline;
+    transition: 300ms ease-in-out;
+    text-transform: uppercase;
+}
+
+.LiNavTop:hover {
+    outline: 2px solid #3a3a3a;
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+#toggler:checked + label img.burgerLogo {
+    content: url("media/close.png");
+    width: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+  
+#toggler, .navbar label {
+    display: none;
+}
+  
+.social-link {
+    justify-self: center;
+}
+ 
+@media screen and (max-width: 900px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    #to-home {
+        margin-top: 30px;
+    }
+  
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+  
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+        
+    #toggler:checked ~ .menu {
+        max-height: 300px;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .container-toggle-theme {
+        width: 100px;
+        border-radius: 50px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [];
+        grid-template-rows: [a] 1fr [b] 1fr [c];
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        outline: 1px solid #268a81;
+        margin-left: 180px;
+        box-shadow: 0 0 15px #268a81;
+    }
+}
+
+/* END HEADER */
+/* END HEADER */
+/* END HEADER */
+
+.active {
+    outline: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+}
+
+#home {
+    height: 100vh;
+}
+
+#about {
+    height: 100vh;
+}
+
+#skills {
+    height: 100vh;
+}
+
+#projects {
+    height: 100vh;
+}
+
+#contact {
+    height: 100vh;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgb(58, 58, 58) 17.8%,
+        rgb(25, 192, 178) 100.2%
+    );
+}
+
+.footer-container-newsletter {
+    grid-row: a / b;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.button-newsletter {
+    padding: 10px;
+    text-transform: uppercase;
+    outline: 1px solid #268a81;
+    color: #268a81;
+    border: none;
+    background-color: white;
+    transition: 400ms ease-in-out;
+}
+
+.button-newsletter:hover {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color: white;
+    text-decoration: underline;
+}
+
+input {
+    padding: 10px;
+    outline: 1px solid #268a81;
+    border: none;
+}
+
+.footer-title-container {
+    padding: 5px;
+    margin: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 15px black;
+}
+
+.footer-container-recent-post {
+    grid-column: a / c;
+    justify-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-container-contact {
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-container-copyright {
+    grid-column: a / c;
+    justify-self: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-rs-none {
+    display: none;
+}
+
+.footer-rs-logo {
+    width: 25px;
+}
+
+.footer-container-creator {
+    grid-column: a / c;
+    justify-self: center;
+    text-align: center;    
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-creator-container {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+}
+
+.logo-creator {
+    width: 200px;
+    border-radius: 100px;
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+}
+
+.container-slider {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+    width: 250px;
+    height: 140px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container-slider.fade-out {
+    opacity: 0;
+}
+
+.container-slider-arrow-left {
+    grid-row: a / c;
+    grid-column: a / b;
+    justify-self: start;
+    margin-left: -40px;
+    align-self: center;
+}
+
+.container-slider-arrow-right {
+    grid-row: a / c;
+    grid-column: b / c;
+    justify-self: end;
+    align-self: center;
+    margin-right: -40px;
+}
+
+#arrow-slider-left {
+    width: 25px;
+    transform: rotate(90deg);
+}
+
+#arrow-slider-right {
+    width: 25px;
+    transform: rotate(-90deg);
+}
+
+.arrow-slider:hover {
+    cursor: pointer;
+}
+
+#title-of-slider {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    z-index: 4;
+    text-shadow: 0 0 15px #000000;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#img-of-slider {
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+    height: 140px;
+    filter: blur(1px);
+    box-shadow: 0 0 15px black;
+}
+
+@media screen and (min-width: 1200px) {
+    .container-slider {
+        width: 350px;
+        height: 220px;
+        border: 5px solid transparent;
+    }
+
+    #img-of-slider {
+        width: 350px;
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer {
+        grid-template-rows: [a] 1fr [b] 1fr [c];
+    }
+
+    .footer-rs-logo {
+        width: 15px;
+        padding-right: 5px;
+    }
+
+    .footer-rs-none {
+        display: inline;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    .footer-rs-none:hover {
+        color: #268a81;
+        border-bottom: 2px solid #268a81;
+        cursor: pointer;
+    }
+
+    .footer-container-contact {
+        grid-row: b / c;
+        grid-column: a / b;
+        justify-self: center;
+        align-self: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-container-newsletter {        
+        grid-row: a / b;
+        grid-column: b / c;
+        justify-self: center;
+        align-self: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-container-recent-post {
+        grid-row: b / c;
+        grid-column: b / c;
+        justify-self: center;
+        align-self: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-container-creator {
+        grid-row: a / b;
+        grid-column: a / b;
+        justify-self: center;
+        align-self: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* END FOOTER */
+/* END FOOTER */
+/* END FOOTER */
+
+.title-section-light {
+    padding-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+}
+
+.title-section-dark {
+    padding-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+}
+
+.theme-active {
+    transition: 500ms ease-in-out;
+}

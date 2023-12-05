@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <!-- HEADER -->
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#"><h1>Llimos florian</h1></a>
+            <input type="checkbox" id="toggler" />
+            
+            <label for="toggler"><img src="media/burger.png" class="burgerLogo" alt="Alt"></img></label>
+            <div class="menu">
+                <ul class="list">
+                    <a href="#"><li class="LiNavTop" id="to-home">Accueil</li></a>
+                    <a href="#about"><li class="LiNavTop" id="to-about">à propos</li></a>
+                    <a href="#skills"><li class="LiNavTop" id="to-skills">Compétences</li></a>
+                    <a href="#projects"><li class="LiNavTop" id="to-projects">Projets</li></a>
+                    <a href="#contact"><li class="LiNavTop" id="to-contact">Contact</li></a>
+                </ul>
+                <div class="container-toggle-theme" id="container-toggle-theme-click">
+                    <img src="media/contrast.png" id="toggleThemeLight" class="img-toggle theme-active"/>
+                    <img src="media/moon.png" id="toggleThemeDark" class="img-toggle theme-active-none" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- END HEADER -->
+    <!-- END HEADER -->
+    <!-- END HEADER -->
+
+    <main>
+        <div id="home">
+            <h2 class="title-section title-section-light animated-element"><span class="title-hover">A</span><span class="title-hover">c</span><span class="title-hover">c</span><span class="title-hover">u</span><span class="title-hover">e</span><span class="title-hover">i</span><span class="title-hover">l</span></h2>
+        </div>
+        <div id="about">
+            <h2 class="title-section title-section-light animated-element"><span class="title-hover">à </span><span class="title-hover">p</span><span class="title-hover">r</span><span class="title-hover">o</span><span class="title-hover">p</span><span class="title-hover">o</span><span class="title-hover">s</span></h2>
+        </div>
+        <div id="skills">
+            <h2 class="title-section title-section-light animated-element"><span class="title-hover">c</span><span class="title-hover">o</span><span class="title-hover">m</span><span class="title-hover">p</span><span class="title-hover">é</span><span class="title-hover">t</span><span class="title-hover">e</span><span class="title-hover">n</span><span class="title-hover">c</span><span class="title-hover">e</span><span class="title-hover">s</span></h2>
+        </div>
+        <div id="projects">
+            <h2 class="title-section title-section-light animated-element"><span class="title-hover">p</span><span class="title-hover">r</span><span class="title-hover">o</span><span class="title-hover">j</span><span class="title-hover">e</span><span class="title-hover">t</span><span class="title-hover">s</span></h2>
+        </div>
+        <div id="contact">
+            <h2 class="title-section title-section-light animated-element"><span class="title-hover">c</span><span class="title-hover">o</span><span class="title-hover">n</span><span class="title-hover">t</span><span class="title-hover">a</span><span class="title-hover">c</span><span class="title-hover"></span><span class="title-hover">t</span></h2>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer-container-contact">
+            <h4 class="footer-title-container">Réseaux sociaux</h4>
+            <ul>
+                <a href=""><li><img src="media/facebook.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">Facebook</span></li></a>
+                <a href=""><li><img src="media/instagram.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">Instagram</span></li></a>
+                <a href=""><li><img src="media/linkedin.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">Linkedin</span></li></a>
+                <a href=""><li><img src="media/github.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">Github</span></li></a>
+                <a href=""><li><img src="media/youtube.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">YouTube</span></li></a>
+                <a href=""><li><img src="media/twitch.png" class="footer-rs-logo" alt="Logo de Facebook"/><span class="footer-rs-none">Twitch</span></li></a>
+            </ul>
+        </div>
+
+        <!-- RECENT POST -->
+        <!-- RECENT POST -->
+        <!-- RECENT POST -->
+
+        <div class="footer-container-recent-post">
+            <h4 class="footer-title-container">Posts récents</h4>
+            <div class="container-slider">
+                <h5 class="" id="title-of-slider"></h5>
+                <img src="" alt="" id="img-of-slider" class=""/>
+                <div class="container-slider-arrow-left">
+                    <img src="media/arrow-down-sign-to-navigate.png" alt="Flèche pointant vers la gauche permettant de faire défiler le slider" id="arrow-slider-left" class="arrow-slider" onclick="prevSlide()">
+                </div>
+                <div class="container-slider-arrow-right">
+                    <img src="media/arrow-down-sign-to-navigate.png" alt="Flèche pointant vers la droite permettant de faire défiler le slider" id="arrow-slider-right" class="arrow-slider" onclick="nextSlide()">
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <!-- NEWSLETTER -->
+        <!-- NEWSLETTER -->
+
+        <div class="footer-container-newsletter">
+            <h4 class="footer-title-container">Newsletter</h4>
+            <form>
+                <input type="email" required name="email-newsletter" placeholder="votre@adresse.email">
+                <button class="button-newsletter">Sign up</button>
+            </form>
+        </div>
+
+        <!-- CREATOR -->
+        <!-- CREATOR -->
+        <!-- CREATOR -->
+
+        <div class="footer-container-creator">
+            <h4 class="footer-title-container">Créateur</h4>
+            <div class="footer-creator-container">
+                <img src="media/florian.jpg" alt="" id="" class="logo-creator">
+            </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <!-- COPYRIGHT -->
+        <!-- COPYRIGHT -->
+
+        <div class="footer-container-copyright">
+            <p>Copyright 2023 Florian Llimos, Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <!-- BACK TO TOP -->
+    <!-- BACK TO TOP -->
+
+    <div class="container-return-to-top-hidden" id="back-to-top">
+        <a href="#"><img src="media/arrow-down-dark.png" alt="" class="" id="drop-down"/></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
