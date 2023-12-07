@@ -126,7 +126,7 @@ a {
 .header {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 666;
     width: 100%;
     box-shadow: 0 0 15px black;
 }
@@ -179,7 +179,8 @@ h1:hover {
 .LiNavTop:hover {
     outline: 2px solid #3a3a3a;
     text-decoration: none;
-    color: #3a3a3a;
+    color: #ffffff;
+    transition: 100ms ease-in;
 }
 
 #toggler:checked + label img.burgerLogo {
@@ -261,28 +262,10 @@ h1:hover {
     outline: 2px solid rgb(255, 255, 255);
     padding: 5px;
     text-decoration: none;
-    transition: 300ms ease-in-out;
+    transition: 100ms ease-in;
 }
 
-#home {
-    height: 100vh;
-}
 
-#about {
-    height: 100vh;
-}
-
-#skills {
-    height: 100vh;
-}
-
-#projects {
-    height: 100vh;
-}
-
-#contact {
-    height: 100vh;
-}
 
 /* FOOTER */
 /* FOOTER */
@@ -397,12 +380,13 @@ li {
 }
 
 .logo-creator {
-    width: 200px;
+    width: 180px;
     border-radius: 100px;
     grid-row: a / c;
     grid-column: a / c;
     justify-self: center;
     align-self: center;
+    box-shadow: 0 0 15px black;
 }
 
 .container-slider {
@@ -500,12 +484,12 @@ li {
         display: inline;
         color: white;
         font-size: 16px;
+        text-shadow: 0 0 15px black;
         text-transform: uppercase;
         border: 2px solid rgba(0, 0, 0, 0);
     }
 
     .footer-rs-none:hover {
-        color: #268a81;
         border-bottom: 2px solid #268a81;
         cursor: pointer;
     }
@@ -553,7 +537,8 @@ li {
 /* END FOOTER */
 
 .title-section-light {
-    padding-top: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
     text-transform: uppercase;
     color: #3a3a3a;
@@ -562,7 +547,8 @@ li {
 }
 
 .title-section-dark {
-    padding-top: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -572,4 +558,225 @@ li {
 
 .theme-active {
     transition: 500ms ease-in-out;
+}
+
+/* MODAL */
+/* MODAL */
+/* MODAL */
+
+.modal-hidden {
+    transition: 500ms ease-in-out;
+    display: none;
+}
+
+.container-modal {
+    width: 90%;
+    height: 90vh;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 777;
+    margin-left: 5%;
+    margin-top: 5vh;
+    position: fixed;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(2px);
+    transition: 500ms ease-in-out;
+    top: 0;
+}
+
+.title-of-project-modal {
+    grid-column: a / c;
+    grid-row: a / b;
+    margin: 15px;
+    font-size: 23px;
+    font-family: 'Luckiest Guy', cursive;
+    justify-self: center;
+    color: white;
+    align-self: center;
+}
+
+.close-modal {
+    width: 20px;
+    grid-column: b / c;
+    grid-row: a / b;
+    justify-self: end;
+    transition: 500ms ease-in-out;
+    align-self: center;
+    margin: 15px;
+    transition: 500ms ease-in-out;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+}
+
+.modal-light {
+    background-color: #ffffff;
+    transition: 500ms ease-in-out;
+    color: #18181d;
+}
+
+.modal-dark {
+    color: white;
+    transition: 500ms ease-in-out;
+    background-color: #18181d;
+}
+
+.projet {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+}
+
+.img-project {
+    width: 80%;    
+    grid-column: a / c;
+    grid-row: a / c;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 0 15px black;
+    filter: blur(1px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-project:hover {
+    cursor: pointer;
+}
+
+.title-projet {
+    z-index: 333;
+    grid-column: a / c;
+    grid-row: a / c;
+    justify-self: center;
+    font-family: 'Luckiest Guy', cursive;
+    align-self: center;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0 0 15px black;
+    align-self: center;
+}
+
+.button-modal {
+    grid-column: a / c;
+    grid-row: b / c;
+    z-index: 333;
+    justify-self: center;
+    align-self: center;
+    width: 20%;
+    color: red;
+    font-size: 20px;
+    width: 40%;
+    text-transform: uppercase;
+    outline: 1px solid black;
+    border: none;
+    box-shadow: 0 0 15px black;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.list-modal > h4 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 22px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.253);
+}
+
+.list-modal > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.list-modal > ul > li {
+    display: inline;
+    text-align: center;
+}
+
+.modal-techno-logo {
+    width: 40px;
+} 
+
+.modal-bloc {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 80px [b] 1fr [c];
+    height: 100%;
+    transition: 200ms ease-in-out;
+}
+
+
+.header-modal {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 80px [b];
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgb(58, 58, 58) 17.8%,
+        rgb(25, 192, 178) 100.2%
+    );
+    grid-row: a / b;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.list-modal {
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    grid-row: b / c;
+    margin-bottom: 80px;
+}
+
+.modal-link {
+    width: 30px;
+}
+
+.date {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+    .container-projets {
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [];
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container-projets {
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [] 1fr [];
+    }
+
+    .modal {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#add-blur {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+    z-index: 444;
+}   
+
+.blur {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+    z-index: 444;
 }
