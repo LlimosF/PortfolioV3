@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 
 /* ALL STYLE */
 /* ALL STYLE */
@@ -27,7 +28,7 @@ a {
 }
 
 .title-hover:hover {
-    color: #1abdaf;
+    color: #da1a1a;
 }
 
 /* END ALL STYLE */
@@ -50,7 +51,7 @@ a {
 }
 
 .body-light {
-    background: white;
+    background-color: #e0e0e0;
     color: #2b2a33;
     transition: 500ms ease-in-out;
 }
@@ -79,9 +80,9 @@ a {
     top: 0;
     left: 0;
     margin-top: 14px;
-    outline: 1px solid #268a81;
+    outline: 1px solid #da1a1a;
     margin-left: 180px;
-    box-shadow: 0 0 15px #268a81;
+    box-shadow: 0 0 15px #da1a1a;
 }
 
 .container-toggle-theme:hover {
@@ -110,7 +111,7 @@ a {
     width: 15px;
     margin: 0 30px 30px 0;  
     transform: rotate(180deg);  
-    border: 2px solid #268a81;
+    border: 2px solid #da1a1a;
     border-radius: 100%;
     padding: 8px;
 }
@@ -139,7 +140,7 @@ h1 {
 }
 
 h1:hover {
-    border-bottom: 1px solid #268a81;
+    border-bottom: 1px solid #da1a1a;
 }
   
 .container {
@@ -155,7 +156,7 @@ h1:hover {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
         rgb(58, 58, 58) 17.8%,
-        rgb(25, 192, 178) 100.2%
+        rgb(37, 37, 37) 100.2%
     );
     padding: 20px;
 }
@@ -177,9 +178,9 @@ h1:hover {
 }
 
 .LiNavTop:hover {
-    outline: 2px solid #3a3a3a;
+    outline: 2px solid #da1a1a;
     text-decoration: none;
-    color: #ffffff;
+    color: #da1a1a;
     transition: 100ms ease-in;
 }
 
@@ -248,9 +249,9 @@ h1:hover {
         top: 0;
         left: 0;
         margin-top: 10px;
-        outline: 1px solid #268a81;
+        outline: 1px solid #da1a1a;
         margin-left: 180px;
-        box-shadow: 0 0 15px #268a81;
+        box-shadow: 0 0 15px #da1a1a;
     }
 }
 
@@ -265,8 +266,6 @@ h1:hover {
     transition: 100ms ease-in;
 }
 
-
-
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
@@ -278,7 +277,7 @@ h1:hover {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
         rgb(58, 58, 58) 17.8%,
-        rgb(25, 192, 178) 100.2%
+        rgb(37, 37, 37) 100.2%
     );
 }
 
@@ -294,10 +293,10 @@ h1:hover {
 .button-newsletter {
     padding: 10px;
     text-transform: uppercase;
-    outline: 1px solid #268a81;
-    color: #268a81;
+    outline: 1px solid #da1a1a;
+    color: #da1a1a;
     border: none;
-    background-color: white;
+    background-color: none;
     transition: 400ms ease-in-out;
 }
 
@@ -311,8 +310,9 @@ h1:hover {
 
 input {
     padding: 10px;
-    outline: 1px solid #268a81;
+    outline: 1px solid #da1a1a;
     border: none;
+    color: white
 }
 
 .footer-title-container {
@@ -490,7 +490,7 @@ li {
     }
 
     .footer-rs-none:hover {
-        border-bottom: 2px solid #268a81;
+        border-bottom: 2px solid #da1a1a;
         cursor: pointer;
     }
 
@@ -542,7 +542,7 @@ li {
     text-align: center;
     text-transform: uppercase;
     color: #3a3a3a;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Gasoek One', sans-serif;
     font-size: 35px;
 }
 
@@ -552,7 +552,7 @@ li {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Gasoek One', sans-serif;    
     font-size: 35px;
 }
 
@@ -560,223 +560,399 @@ li {
     transition: 500ms ease-in-out;
 }
 
-/* MODAL */
-/* MODAL */
-/* MODAL */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
 
-.modal-hidden {
-    transition: 500ms ease-in-out;
-    display: none;
-}
-
-.container-modal {
+.about-bloc-light1 {
     width: 90%;
-    height: 90vh;
-    left: 0;
-    right: 0;
-    background-color: white;
-    z-index: 777;
     margin-left: 5%;
-    margin-top: 5vh;
-    position: fixed;
-    box-shadow: 0 0 15px black;
-    backdrop-filter: blur(2px);
-    transition: 500ms ease-in-out;
-    top: 0;
-}
-
-.title-of-project-modal {
-    grid-column: a / c;
-    grid-row: a / b;
-    margin: 15px;
-    font-size: 23px;
-    font-family: 'Luckiest Guy', cursive;
-    justify-self: center;
-    color: white;
-    align-self: center;
-}
-
-.close-modal {
-    width: 20px;
-    grid-column: b / c;
-    grid-row: a / b;
-    justify-self: end;
-    transition: 500ms ease-in-out;
-    align-self: center;
-    margin: 15px;
-    transition: 500ms ease-in-out;
-}
-
-.close-modal:hover {
-    cursor: pointer;
-}
-
-.modal-light {
-    background-color: #ffffff;
-    transition: 500ms ease-in-out;
-    color: #18181d;
-}
-
-.modal-dark {
-    color: white;
-    transition: 500ms ease-in-out;
-    background-color: #18181d;
-}
-
-.projet {
-    display: grid;
-    grid-template-columns: [a] 1fr [b] 1fr [c];
-    grid-template-rows: [a] 1fr [b] 1fr [c];
-}
-
-.img-project {
-    width: 80%;    
-    grid-column: a / c;
-    grid-row: a / c;
-    justify-self: center;
-    align-self: center;
-    box-shadow: 0 0 15px black;
-    filter: blur(1px);
+    background-color: rgb(245, 245, 245);
     margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.img-project:hover {
-    cursor: pointer;
-}
-
-.title-projet {
-    z-index: 333;
-    grid-column: a / c;
-    grid-row: a / c;
-    justify-self: center;
-    font-family: 'Luckiest Guy', cursive;
-    align-self: center;
-    color: white;
-    font-size: 28px;
-    text-shadow: 0 0 15px black;
-    align-self: center;
-}
-
-.button-modal {
-    grid-column: a / c;
-    grid-row: b / c;
-    z-index: 333;
-    justify-self: center;
-    align-self: center;
-    width: 20%;
-    color: red;
-    font-size: 20px;
-    width: 40%;
-    text-transform: uppercase;
-    outline: 1px solid black;
-    border: none;
-    box-shadow: 0 0 15px black;
-    border-radius: 50px;
-    padding: 5px;
-}
-
-.list-modal > h4 {
-    text-align: center;
-    padding: 20px;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 22px;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.253);
-}
-
-.list-modal > ul {
-    display: flex;
-    justify-content: center;
-}
-
-.list-modal > ul > li {
-    display: inline;
-    text-align: center;
-}
-
-.modal-techno-logo {
-    width: 40px;
-} 
-
-.modal-bloc {
     display: grid;
     grid-template-columns: [a] 1fr [b] 1fr [c];
-    grid-template-rows: [a] 80px [b] 1fr [c];
-    height: 100%;
     transition: 200ms ease-in-out;
+    grid-template-rows: [a] 100px [b] 1fr [c];
+    box-shadow: 0 0 15px black;
 }
 
-
-.header-modal {
+.about-bloc-light2 {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(218, 218, 218);
+    margin-top: 20px;
     display: grid;
     grid-template-columns: [a] 1fr [b] 1fr [c];
-    grid-template-rows: [a] 80px [b];
-    background-image: radial-gradient(
-        circle farthest-corner at 10% 20%,
-        rgb(58, 58, 58) 17.8%,
-        rgb(25, 192, 178) 100.2%
-    );
+    transition: 200ms ease-in-out;
+    grid-template-rows: [a] 100px [b] 1fr [c];
+    box-shadow: 0 0 15px black;
+}
+
+.about-bloc-dark1 {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(56, 56, 56);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    transition: 200ms ease-in-out;
+    grid-template-rows: [a] 100px [b] 1fr [c];
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.about-bloc-dark2 {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(41, 41, 41);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    transition: 200ms ease-in-out;
+    grid-template-rows: [a] 100px [b] 1fr [c];
+    box-shadow: 0 0 15px black;
+    color: white;
+}
+
+.about-bloc-image {
+    margin-top: 20px;
     grid-row: a / b;
     grid-column: a / c;
     justify-self: center;
     align-self: center;
-    width: 100%;
-    z-index: 5;
 }
 
-.list-modal {
+.about-bloc-text {
+    grid-row: b / c;
     grid-column: a / c;
     justify-self: center;
     align-self: center;
-    grid-row: b / c;
-    margin-bottom: 80px;
+    padding: 20px;
 }
 
-.modal-link {
-    width: 30px;
-}
-
-.date {
-    font-size: 18px;
+.about-image {
+    width: 80px;
 }
 
 @media screen and (min-width: 700px) {
-    .container-projets {
+    .about-bloc-light1 {
+        grid-template-columns: [a] 80% [b] 1fr [c];
+        width: 70%;
+        margin-left: 15%;
+        padding: 40px;
+    }
+
+    .about-bloc-light2 {
+        grid-template-columns: [a] 1fr [b] 80% [c];
+        width: 70%;
+        margin-left: 15%;
+        padding: 40px;
+    }
+
+    .about-bloc-light1 > .about-bloc-text {
+        grid-column: a / b;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about-bloc-light1 > .about-bloc-image {
+        grid-column: b / c;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+    }
+
+    .about-bloc-light2 > .about-bloc-text {
+        grid-column: b / c;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about-bloc-light2 > .about-bloc-image {
+        grid-column: a / b;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+    }
+
+    /* */
+
+    .about-bloc-dark1 {
+        grid-template-columns: [a] 80% [b] 1fr [c];
+        width: 70%;
+        margin-left: 15%;
+        padding: 40px;
+    }
+
+    .about-bloc-dark2 {
+        grid-template-columns: [a] 1fr [b] 80% [c];
+        width: 70%;
+        margin-left: 15%;
+        padding: 40px;
+    }
+
+    .about-bloc-dark1 > .about-bloc-text {
+        grid-column: a / b;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about-bloc-dark1 > .about-bloc-image {
+        grid-column: b / c;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+    }
+
+    .about-bloc-dark2 > .about-bloc-text {
+        grid-column: b / c;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about-bloc-dark2 > .about-bloc-image {
+        grid-column: a / b;
+        grid-row: a / c;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+    }
+}
+
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
+.bloc-about-light1 {
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+    margin-top: 15px;
+    border-radius: 10px 40px 10px 40px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    outline: 1px solid #da1a1a;
+}
+
+.bloc-about-image {
+    grid-row: a / b;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: end;
+}
+
+.bloc-about-text {
+    grid-row: b / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.bloc-about-text > h3 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.about-image {
+    width: 100px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .about-container {
+        width: 70%;
+        margin-left: 15%;
         display: grid;
         grid-template-columns: [] 1fr [] 1fr [];
+    }
+
+    .bloc-about-light1 {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [] 1fr [] 1fr [];
+    }
+}
+
+/* SKILL */
+/* SKILL */
+/* SKILL */
+
+/* PROJET */
+/* PROJET */
+/* PROJET */
+
+/* HOME */
+/* HOME */
+/* HOME */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/Design-Wallpaper-HD-1061501361.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.margin-top {
+    margin-top: 100vh;
+}
+
+.scroll-bottom {
+    grid-row: b / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.scroll-img {
+    width: 40px;
+}
+
+.container-typing {
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+}
+
+.container-typing p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 0 0 15px black;
+    overflow: hidden;
+}
+
+.container-typing p span.typed-text {
+    font-weight: normal;
+    font-family: 'Luckiest Guy', cursive;
+    color: #e84c3d;
+    text-shadow: 0 0 15px black;
+}
+
+  .container-typing p span.cursor {
+  display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container-typing p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+/* SKILL */
+/* SKILL */
+/* SKILL */
+
+.bloc-skill {
+    width: 50%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c];
+    grid-template-rows: [a] 1fr [b] 1fr [c];
+    margin-top: 15px;
+    border-radius: 10px 40px 10px 40px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    outline: 1px solid #da1a1a;
+}
+
+.skill-bloc-image {
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+}
+
+.skill-bloc-text {
+    grid-row: a / c;
+    grid-column: a / c;
+    justify-self: center;
+    align-self: center;
+    z-index: 333;
+}
+
+.skill-bloc-text > h3 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.image-skill {
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+}
+
+@media screen and (min-width: 650px) {
+    .skill-container {
+        width: 50%;
+        margin-left: 25%;
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [];
+    }
+
+    .bloc-skill {
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .container-projets {
+    .skill-container {
+        width: 70%;
+        margin-left: 15%;
         display: grid;
-        grid-template-columns: [] 1fr [] 1fr [] 1fr [];
+        grid-template-columns: [] 1fr [] 1fr [];
     }
 
-    .modal {
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+    .bloc-skill {
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 20%;
     }
 }
 
-#add-blur {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 200ms ease-in-out;
-    z-index: 444;
-}   
-
-.blur {
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 200ms ease-in-out;
-    z-index: 444;
+@media screen and (min-width: 1600px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: [] 1fr [] 1fr [] 1fr [] 1fr [];
+    }
 }
