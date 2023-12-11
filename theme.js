@@ -2,19 +2,32 @@ var toggleThemeButton = document.getElementById("container-toggle-theme-click");
 var themeActive = "light";
 var containerThemeLogo = document.getElementById("toggleThemeToTop");
 
-let body = document.querySelector("body");
-body.classList.add("body-light");
+let about = document.querySelector("#about");
+let skills = document.querySelector("#skills");
+let projects = document.querySelector("#projects");
+let contact = document.querySelector("#contact");
 let imgLight = document.getElementById("toggleThemeLight");
 let imgDark = document.getElementById("toggleThemeDark");
 let dropDown = document.querySelector("#drop-down");
 let imgModal = document.getElementById("close-modal");
 
+about.classList.add("container-light");
+skills.classList.add("container-light");
+projects.classList.add("container-light");
+contact.classList.add("container-light");
+
 function toggleTheme() {
 
   if (themeActive === "light") {
 
-    body.classList.remove("body-light");
-    body.classList.add("body-dark");
+    about.classList.remove("container-light");
+    about.classList.add("container-dark");
+    skills.classList.remove("container-light");
+    skills.classList.add("container-dark");
+    projects.classList.remove("container-light");
+    projects.classList.add("container-dark");
+    contact.classList.remove("container-light");
+    contact.classList.add("container-dark");
     imgDark.classList.add("theme-active");
     imgDark.classList.remove("theme-active-none")
     imgLight.classList.remove("theme-active");
@@ -33,8 +46,14 @@ function toggleTheme() {
 
   } else {
 
-    body.classList.add("body-light");
-    body.classList.remove("body-dark");
+    about.classList.add("container-light");
+    about.classList.remove("container-dark");
+    skills.classList.add("container-light");
+    skills.classList.remove("container-dark");
+    projects.classList.add("container-light");
+    projects.classList.remove("container-dark");
+    contact.classList.add("container-light");
+    contact.classList.remove("container-dark");
     imgLight.classList.add("theme-active");
     imgDark.classList.remove("theme-active");
     imgDark.classList.add("theme-active-none");

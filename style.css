@@ -39,8 +39,8 @@ a {
 /* TOGGLE THEME */
 /* TOGGLE THEME */
 
-.body-dark {
-    background: #2b2a33;
+.container-dark {
+    background-color: #2b2a33;
     color: white;
     transition: 500ms ease-in-out;
 }
@@ -50,7 +50,7 @@ a {
     transition: 500ms ease-in-out;
 }
 
-.body-light {
+.container-light {
     background-color: #e0e0e0;
     color: #2b2a33;
     transition: 500ms ease-in-out;
